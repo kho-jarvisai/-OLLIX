@@ -1,3 +1,16 @@
+# Ignore python runtime memory compilation tracks
 __pycache__/
 *.pyc
+
+# Ignore local database records
 signals.db
+
+# CRITICAL SECURITY WALL: Ignore the raw, readable source code files
+secret_math.py
+secret_math.c
+build_math.py
+build/
+
+# DO NOT ignore the compiled binaries (so your friends can use them)
+!*.pyd
+!*.so
